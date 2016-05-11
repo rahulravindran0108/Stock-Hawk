@@ -26,6 +26,7 @@
         android:id="@+id/tv_no_network_connection"
         android:layout_below="@id/tv_no_network_connection_image"
         android:text="@string/network_toast"
+        android:contentDescription="@string/network_toast"
         android:visibility="gone"
         />
 
@@ -52,5 +53,6 @@
       fab:fab_type="normal"
       fab:layout_anchor="recycler_view"
       fab:layout_anchorGravity="bottom | end"
+      android:contentDescription="@string/add_stock"
       />
 </FrameLayout>
