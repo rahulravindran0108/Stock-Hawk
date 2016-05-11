@@ -115,9 +115,18 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                     return;
                   } else {
                     // Add the stock to DB
-                    mServiceIntent.putExtra("tag", "add");
-                    mServiceIntent.putExtra("symbol", input.toString());
-                    startService(mServiceIntent);
+                    if(!input.toString().trim().isEmpty()){
+                      // Add the stock to DB
+                      mServiceIntent.putExtra("tag", "add");
+                      mServiceIntent.putExtra("symbol", input.toString().toUpperCase());
+                      startService(mServiceIntent);
+                    }else{
+                      Toast toast =
+                              Toast.makeText(MyStocksActivity.this, "Stock can't be empty!",
+                                      Toast.LENGTH_LONG);
+                      toast.setGravity(Gravity.CENTER, Gravity.CENTER, 0);
+                      toast.show();
+                    }
                   }
                 }
               })
