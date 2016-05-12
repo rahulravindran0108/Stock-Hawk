@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Stock Hawk EG</string>
+
+    <string name="action_example">Example action EG</string>
+
+    <string name="action_settings">Settings EG</string>
+    <string name="action_change_units">Change Units EG</string>
+    <string name="symbol_search">Symbol Search EG</string>
+    <string name="content_test">Search for a Stock Symbol EG</string>
+    <string name="input_hint">FB EG</string>
+    <string name="input_prefill"></string>
+    <string name="network_toast">Uh-oh! This app requires an internet connection EG</string>
+</resources>
