@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:id="@+id/newstitle"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/short_margin"
+        android:layout_marginBottom="@dimen/short_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:id="@+id/content"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/short_margin"
+        android:layout_marginBottom="@dimen/short_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:id="@+id/publisher"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/short_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder"
+        android:id="@+id/date"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="@dimen/short_margin"
+        android:layout_marginTop="@dimen/short_margin" />
+</LinearLayout>

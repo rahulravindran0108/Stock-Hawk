@@ -54,6 +54,22 @@
         </receiver>
         <service android:name="com.sam_chordas.android.stockhawk.service.StockWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <activity
+            android:name="com.facebook.FacebookActivity">
+        </activity>
+        <activity
+            android:name="com.sam_chordas.android.stockhawk.ui.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName="com.sam_chordas.android.stockhawk.ui.MyStocksActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sam_chordas.android.stockhawk.ui.MyStocksActivity" />
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
     </application>
+    <provider android:authorities="com.facebook.app.FacebookContentProvider{app_id}"
+        android:name="com.facebook.FacebookContentProvider"
+        android:exported="true"/>
 
 </manifest>

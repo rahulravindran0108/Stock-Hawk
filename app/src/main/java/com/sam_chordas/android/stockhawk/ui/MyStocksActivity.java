@@ -15,6 +15,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -90,6 +91,11 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                     public void onItemClick(View v, int position) {
                         //TODO:
                         // do something on item click
+                        String stock = mCursor.getString(mCursor.getColumnIndex("symbol"));
+                        Log.i("Stock-Hawk",stock);
+                        Intent intent = new Intent(MyStocksActivity.this, DetailActivity.class);
+                        intent.putExtra("SYMBOL", stock);
+                        startActivity(intent);
                     }
                 }));
         recyclerView.setAdapter(mCursorAdapter);

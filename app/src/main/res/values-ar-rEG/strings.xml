@@ -10,4 +10,17 @@
     <string name="input_hint">FB EG</string>
     <string name="input_prefill"></string>
     <string name="network_toast">Uh-oh! This app requires an internet connection EG</string>
+
+    <string name="stock_details">Stock Details</string>
+    <string name="stock_image">Stock Image</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="news_feeds">News Feeds</string>
+    <string name="aapl">AAPL</string>
+    <string name="apple_inc">Apple Inc</string>
+    <string name="price_placeholder">$ 109.99</string>
+    <string name="change_placeholder">+0.92%</string>
+    <string name="market_cap_placeholder">Market Cap: 609.80 Billion</string>
+    <string name="autocomplete_name_placeholder">%1$s (%2$s)</string>
+    <string name="refresh_stocks">Refresh Stocks</string>
+    <string name="image_stock_header">Today\'s Stock Activity</string>
 </resources>
